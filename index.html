@@ -1,45 +1,53 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<title>Animated Login Form</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login And Registration</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<img class="wave" src="img/wave.png">
-	<div class="container">
-		<div class="img">
-			<img src="img/bg.svg">
-		</div>
-		<div class="login-content">
-			<form action="index.html">
-				<img src="img/avatar.svg">
-				<h2 class="title">Welcome</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login">
-            </form>
-        </div>
-    </div>
-    <script type="text/javascript" src="js/main.js"></script>
+<body
+<div class="hero"
+<div class="form-box"
+<div class="button-box ">
+<div id="btn"> </div>
+<button type="button" class=" toggle-btn"> onclick="login()">Log In</button>
+<button type="button" class="toggle-btn"> onclick="register()">Register</button>
+</div>
+<div class="social-icons">
+<img src="img/whatsapp.png">
+<img src="img/github.png">
+</div>
+</div>
+<form id="login" class="input-group"
+<input type="text" class="input-field" placeholder="User Id" required>
+<input type="text" class="input-field" placeholder="Enter Password" required>
+<input type="checkbox" class="chech-box"><span>Remember Password</span>
+<button type="submit" class="submit-btn">Log in</button>
+</form>
+<form id="register" class="input-group"
+<input type="text" class="input-field" placeholder="User Id" required>
+<input type="email" class="input-field" placeholder="Email Id" required>
+<input type="text" class="input-field" placeholder="Enter Password" required>
+<input type="checkbox" class="chech-box"><span>Remember Password</span>
+<button type="submit" class="submit-btn">Log in</button>
+</form>
+</div>
+</div>
+
+   <script>
+   var x document.getElementById("login") ;
+   var y document.getElementById("register");
+   var z document getElementById("btn") ;
+   
+   function register (){
+   x.style.left = "-400px" ;
+   y.style.left = "500px";
+   z.style.left = "110px";
+   
+   function register (){
+   x.style.left = "-400px" ;
+   y.style.left = "450px";
+   z.style.left = "0";
+   </script>
+
+
 </body>
 </html>
