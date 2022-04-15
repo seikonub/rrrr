@@ -1,222 +1,104 @@
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+margin: 0;
+padding: 0
+font-family: sans-serif;
 }
-
-body{
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+.hero{
+height: 100%;
+width: 100%;
+background-image: linear
+gradient (rgba (0,0,0,0.4) , rgba (0,0,0,0.4)) ,url (banner.jpg) ;
+background -position: center
+background-size : cover
+position: absolute;
 }
-
-.wave{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	z-index: -1;
+.form-box{
+width: 380px;
+height: 480px;
+position: relative;
+margin: 6% auto;
+background: #fff;
+padding: 5px;
+overflow: hidden;
 }
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
-    padding: 0 2rem;
+.button-box{
+width: 220px;
+margin: 35px auto;
+position: relative;
+box-shadow: 0 20px 9px #ff61241f;
+border-radius: 30px;
 }
-
-.img{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+.toggle-btn{
+padding: 10px 30px;
+cursor: pointer;
+background : transparent;
+border: 0
+outline: none;
+position: relative;
 }
-
-.login-content{
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	text-align: center;
+#btn{
+top:
+left: 0
+position: absolute;
+width: 110px;
+height: 100%;
+background : linear-gradient (to right, aff105f, #ffade6) ;
+border-radius : 30px;
+transition:.5s;
 }
-
-.img img{
-	width: 500px;
+.social-icons{
+margin: 30px auto;
+text-align: center;
 }
-
-form{
-	width: 360px;
+.social-icons img{
+width: 30px;
+margin: 0 12px;
+box-shadow: e 20px e 7f7f7f3d
+cursor: pointer;
+border-radius: 50%;
 }
-
-.login-content img{
-    height: 100px;
+.input-group{
+top: 180px;
+position: absolute;
+width: 280px;
+transition : .5s;
 }
-
-.login-content h2{
-	margin: 15px 0;
-	color: #333;
-	text-transform: uppercase;
-	font-size: 2.9rem;
+.input-field{
+width: 100%;
+padding: 10px 0;
+margin: 5px 0;
+border-left: 0
+border-top: 0;
+border-right: e;
+border-bot tom : 1px solid #999;
+outline: none;
+background : transparent ;
 }
-
-.login-content .input-div{
-	position: relative;
-    display: grid;
-    grid-template-columns: 7% 93%;
-    margin: 25px 0;
-    padding: 5px 0;
-    border-bottom: 2px solid #d9d9d9;
+.submit-btn{
+width: 85%;
+padding: 19px 3opx;
+cursor: pointer;
+display : block;
+margin: auto;
+background: linear-gradient (to right, #ff105f, #ffad@6) ;
+border: 0;
+outline: none;
+border-radius: 30px;
 }
-
-.login-content .input-div.one{
-	margin-top: 0;
+.chech-box{
+margin: 30px 10px 30px 0
 }
-
-.i{
-	color: #d9d9d9;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+span{
+color: #777
+font-size : 12px
+bottom: 68px;
+position: absolute
 }
-
-.i i{
-	transition: .3s;
+#login{
+left: 50px;
 }
-
-.input-div > div{
-    position: relative;
-	height: 45px;
-}
-
-.input-div > div > h5{
-	position: absolute;
-	left: 10px;
-	top: 50%;
-	transform: translateY(-50%);
-	color: #999;
-	font-size: 18px;
-	transition: .3s;
-}
-
-.input-div:before, .input-div:after{
-	content: '';
-	position: absolute;
-	bottom: -2px;
-	width: 0%;
-	height: 2px;
-	background-color: #38d39f;
-	transition: .4s;
-}
-
-.input-div:before{
-	right: 50%;
-}
-
-.input-div:after{
-	left: 50%;
-}
-
-.input-div.focus:before, .input-div.focus:after{
-	width: 50%;
-}
-
-.input-div.focus > div > h5{
-	top: -5px;
-	font-size: 15px;
-}
-
-.input-div.focus > .i > i{
-	color: #38d39f;
-}
-
-.input-div > div > input{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	border: none;
-	outline: none;
-	background: none;
-	padding: 0.5rem 0.7rem;
-	font-size: 1.2rem;
-	color: #555;
-	font-family: 'poppins', sans-serif;
-}
-
-.input-div.pass{
-	margin-bottom: 4px;
-}
-
-a{
-	display: block;
-	text-align: right;
-	text-decoration: none;
-	color: #999;
-	font-size: 0.9rem;
-	transition: .3s;
-}
-
-a:hover{
-	color: #38d39f;
-}
-
-.btn{
-	display: block;
-	width: 100%;
-	height: 50px;
-	border-radius: 25px;
-	outline: none;
-	border: none;
-	background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-	background-size: 200%;
-	font-size: 1.2rem;
-	color: #fff;
-	font-family: 'Poppins', sans-serif;
-	text-transform: uppercase;
-	margin: 1rem 0;
-	cursor: pointer;
-	transition: .5s;
-}
-.btn:hover{
-	background-position: right;
+#register{
+left: 45px;
 }
 
 
-@media screen and (max-width: 1050px){
-	.container{
-		grid-gap: 5rem;
-	}
-}
-
-@media screen and (max-width: 1000px){
-	form{
-		width: 290px;
-	}
-
-	.login-content h2{
-        font-size: 2.4rem;
-        margin: 8px 0;
-	}
-
-	.img img{
-		width: 400px;
-	}
-}
-
-@media screen and (max-width: 900px){
-	.container{
-		grid-template-columns: 1fr;
-	}
-
-	.img{
-		display: none;
-	}
-
-	.wave{
-		display: none;
-	}
-
-	.login-content{
-		justify-content: center;
-	}
-}
